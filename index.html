@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Your Local Weather</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Your Local Weather</h1>
+	<div class="container flex">
+		<div class="mainInterface">
+			<div class="zip">
+				<div class="weather-icon">
+					<img src="https://openweathermap.org/img/wn/10d@2x.png">
+          </div>
+          <div>
+            <span class="condition textFont"></span>
+          </div>
+        </div>
+        <br>
+        <div class="tempDegree flex">
+          <div class="temp flex">
+            <span class="degree textFonts ">--</span><br>
+            <span class="fanCel textFonts">-</span>
+          </div>
+          
+        </div>
+        <br>
+        <div class="feels">
+          <div class="feelsText width">
+              <p class='textFonttwo feelsP'>Feels like: <span class="feelsLike textFont">--</span>
+          <span class="fanCeltwo textFont">-</span></p>
+          </div>
+        </div>
+        <div class="textInfo flex">
+          
+          <div class="location">
+            <p class='textFont '><span class="status textFont"></span></p>
+          </div>
+          <div class="">
+            <span class="locationAPI"></span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+      <div style="margin-top:20px;">
+        <p class='textFonttwo' style="text-align:center;">Next Five Days</p>
+      </div>
+    <div class="centerNextFive "style="margin-top:15px;">  
+    <div class="nextFiveDays textFonttwo ">
+      <div class="next5dayscontainer">
+      <!-- start of hi/lo div dayOne ********************************************************************** ONE-->
+      <div class="dayOne dailyCont">
+         <div>
+          <span id="demo"></span>
+        </div>
+        <div class="weather-iconOne dailyIcon">
+          <img class="" src="https://openweathermap.org/img/wn/10d@2x.png">
+        </div>
+        
+        <div>
+          <span class="conditionOne "></span>
+        </div>
+              
+        <div class="tempDegreeOne ">
+          <div class="tempHiOne hiTemps ">
+            
+            <span class="degreeHiOne ">--</span> 
+            <span class="fanCelHiOne ">-</span>
+          </div>
+        
+          <div class="tempLowOne ">
+            
+            <span class="degreeLowOne ">--</span> 
+            <span class="fanCelLowOne ">-</span>
+          </div>
+        </div>
+      </div>
+      <!-- end of Hi/lo div dayOne --> 
+       <!-- start of hi/lo div dayTwo ********************************************************************** TWO-->
+      <div class="dayTwo dailyCont">
+        <div>
+          <span id="demo1"></span>
+        </div>
+        <div class="weather-iconTwo dailyIcon">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+        </div>
+        
+        <div>
+          <span class="conditionTwo "></span>
+        </div>
+        
+        
+        <div class="tempDegreeTwo ">
+          <div class="tempHiTwo hiTemps flex">
+            <span class="degreeHiTwo  ">--</span> 
+            <span class="fanCelHiTwo ">-</span>
+          </div>
+          <div class="tempLowOne flex">
+            <span class="degreeLowTwo">--</span> 
+            <span class="fanCelLowTwo">-</span>
+          </div>
+        </div>
+      </div>
+      <!-- end of Hi/lo div dayTwo--> 
+       <!-- start of hi/lo div dayThree ********************************************************************** THREE-->
+      <div class="dayThree dailyCont">
+        <div>
+          <span id="demo2"></span>
+        </div>
+        <div class="weather-iconThree dailyIcon">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+        </div>
+        
+        <div>
+          <span class="conditionThree "></span>
+        </div>
+        
+     
+        <div class="tempDegreeThree ">
+          <div class="tempHiThree hiTemps flex">
+            <span class="degreeHiThree  ">--</span> 
+            <span class="fanCelHiThree ">-</span>
+          </div>
+          <div class="tempLowThree flex">
+            <span class="degreeLowThree  ">--</span> 
+            <span class="fanCelLowThree ">-</span>
+          </div>
+        </div>
+      </div>
+      <!-- end of Hi/lo div dayThree --> 
+       <!-- start of hi/lo div dayFour  ********************************************************************** FOUR-->
+      <div class="dayFour dailyCont">
+        <div>
+          <span id="demo3"></span>
+        </div>
+        <div class="weather-iconFour dailyIcon">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+        </div>
+        
+        <div>
+          <span class="conditionFour "></span>
+        </div>
+        
+      
+        <div class="tempDegreeFour ">
+          <div class="tempHiFour hiTemps flex">
+            <span class="degreeHiFour ">--</span> 
+            <span class="fanCelHiFour ">-</span>
+          </div>
+          <div class="tempLowFour flex">
+             <span class="degreeLowFour ">--</span> 
+            <span class="fanCelLowFour ">-</span>
+          </div>
+        </div>
+      </div>
+      <!-- end of Hi/lo div dayFour --> 
+       <!-- start of hi/lo div dayFive ********************************************************************** FIVE-->
+      <div class="dayFive dailyCont">
+        <div>
+          <span id="demo4"></span>
+        </div>
+        <div class="weather-iconFive dailyIcon">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png">
+        </div>
+        
+        <div>
+          <span class="conditionFive"></span>
+        </div>
+        
+      
+        <div class="tempDegreeFive ">
+          <div class="tempHiFive hiTemps flex">
+            <span class="degreeHiFive  ">--</span> 
+            <span class="fanCelHiFive ">-</span>
+          </div>
+          <div class="tempLowFive flex">
+            <span class="degreeLowFive  ">--</span> 
+            <span class="fanCelLowFive ">-</span>
+          </div>
+        </div>
+      </div>
+      <!-- end of Hi/lo div dayFive--> 
+      </div>
+    </div>
+    </div>   
+    <script src="script.js"></script>
+  </body>
+</html>
