@@ -102,7 +102,7 @@ function getWeatherAndLocation(unit, fandc) {
   }
   navigator.geolocation.getCurrentPosition(success, error);//gets the user long and lat if successful or let the user know that it can if error
 }
-function getWeatherData(weatherURL, fandc) {
+const getWeatherData = (weatherURL, fandc) => {
   fetch(weatherURL)
     .then(res => res.json())
     .then(data => {
@@ -116,12 +116,12 @@ function getWeatherData(weatherURL, fandc) {
       feelsLike.textContent = feelsLikeTemp + '°'
     })
 }
-function getWeatherDataFiveDay(weatherURL, fandcFiveDay) {
+const getWeatherDataFiveDay = (weatherURL, fandcFiveDay) => {
   fetch(weatherURL)
     .then(res => res.json())
     .then(data => {
-      hiOne= Math.trunc(data.daily[1].temp.max)
-      lowOne=Math.trunc(data.daily[1].temp.min)
+      hiOne = Math.trunc(data.daily[1].temp.max)
+      lowOne = Math.trunc(data.daily[1].temp.min)
       degreeHiOne.textContent = "H: " +hiOne + '°'
       degreeLowOne.textContent = "L: "+lowOne + '°'
       
@@ -161,4 +161,5 @@ function getWeatherDataFiveDay(weatherURL, fandcFiveDay) {
 //event listener that runs the function when the page loads.
 document.querySelector('.weather-icon').addEventListener('click', getWeatherAndLocation(units, uOfm));
 //set the unit of mesurment to metric
+
 
